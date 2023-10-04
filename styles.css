@@ -1,10 +1,13 @@
 
 
-h1, h2 {
-
+h1 {
     text-align: center;
+}
 
-
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 ul {
@@ -23,15 +26,41 @@ ul {
     border: solid 1px black;
     width: 350px;
     margin: 10px;
-    /* padding: 10px; */
     padding-top: 0;
+}
+
+.title-card {
+    background-color: lightblue;
+    color: white;
+    text-align: 1rem;
+    margin: 0;
+    padding: 10px;
 }
 
 .card-body {
     padding: 0 15px 0 15px;
 }
 
-.button-basic-plan-active {
+.plan-type {
+    font-size: 1.5rem;
+}
+
+.gigabytes {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.red-bar {
+    height: 20px;
+    border: solid 1px black;
+    background-color: red;
+}
+
+.card-space-text {
+    font-size: 1.2rem;
+}
+
+.button-plan-active {
     border: solid 1px black;
     text-align: center;
     width: 250px;
@@ -41,7 +70,7 @@ ul {
     color: white;
 }
 
-.button-basic-plan {
+.button-plan {
     border: solid 1px black;
     text-align: center;
     width: 250px;
@@ -51,37 +80,11 @@ ul {
     color: white;
 }
 
-.button-basic-plan:hover {
+.button-plan:hover {
     background-color: lightcoral;
 }
 
-.plan-type {
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-.gigabytes {
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    text-align: center;
-}
 
 .card-text {
-    font-size: 1.2rem;
     text-align: center;
-}
-
-.red-bar {
-    height: 20px;
-    border: solid 1px black;
-    background-color: red;
-}
-
-/* ids */
-
-.title-card {
-    background-color: lightblue;
-    text-align: center;
-    margin: 0;
-    padding: 5px;
 }
