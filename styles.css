@@ -1,38 +1,55 @@
-
-
-h1 {
+body {
     text-align: center;
 }
 
 h2 {
-    text-align: center;
     margin-top: 20px;
     margin-bottom: 40px;
 }
 
 ul {
     list-style: none;
-  }
-  
-  ul li:before {
+}
+
+ul li:before {
     content: '✓ ';
-  }
+}
 
 /* classes */
 
+/* for cellphones */
+
+@media screen and (min-width: 600px) {
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/* for desktops */
+
+@media screen and (min-width: 768px) {
+
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
 
 .card-plan {
     display: inline-block;
     border: solid 1px black;
-    width: 350px;
     margin: 10px;
     padding-top: 0;
 }
 
 .title-card {
-    background-color: lightblue;
+    background-color: aqua;
     color: white;
-    text-align: 1rem;
+    font-size: 2rem;
     margin: 0;
     padding: 10px;
 }
@@ -63,7 +80,7 @@ ul {
 .button-plan-active {
     border: solid 1px black;
     text-align: center;
-    width: 250px;
+    width: 75%;
     margin: auto;
     padding: 15px;
     background-color: grey;
@@ -73,7 +90,7 @@ ul {
 .button-plan {
     border: solid 1px black;
     text-align: center;
-    width: 250px;
+    width: 75%;
     margin: auto;
     padding: 15px;
     background-color: dodgerblue;
